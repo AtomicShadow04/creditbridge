@@ -1,0 +1,77 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: creditbridge-backend/package-lock.json
+    
+    - name: Install backend dependencies
+      working-directory: creditbridge-backend
+      run: npm ci
+    
+    - name: Run linter
+      working-directory: creditbridge-backend
+      run: npm run lint
+    
+    - name: Build backend
+      working-directory: creditbridge-backend
+      run: npm run build
+    
+    - name: Run unit tests
+      working-directory: creditbridge-backend
+      run: npm run test
+    
+    - name: Run E2E tests
+      working-directory: creditbridge-backend
+      env:
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      run: npm run test:e2e
+      continue-on-error: true
+
+  frontend:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: creditbridge-ui/package-lock.json
+    
+    - name: Install frontend dependencies
+      working-directory: creditbridge-ui
+      run: npm ci
+    
+    - name: Run linter
+      working-directory: creditbridge-ui
+      run: npm run lint
+    
+    - name: Build frontend
+      working-directory: creditbridge-ui
+      run: npm run build
