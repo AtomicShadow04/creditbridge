@@ -1,5 +1,9 @@
 # CreditBridge
 
+<p align="center">
+  <img src="assets/images/creditbridge-logo.png" alt="CreditBridge Logo" width="300">
+</p>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **An AI-powered automated lending platform for African SMEs**

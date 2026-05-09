@@ -1,5 +1,9 @@
 # CreditBridge UI
 
+<p align="center">
+  <img src="../assets/images/creditbridge-logo.png" alt="CreditBridge Logo" width="300">
+</p>
+
 An AI-powered automated lending platform for African SMEs. CreditBridge revolutionizes loan approval by replacing manual review processes with intelligent AI agents that provide instant decisions backed by data-driven risk assessment and blockchain transparency.
 
 ## 🎯 What is CreditBridge?

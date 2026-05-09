@@ -96,13 +96,15 @@ export default function Home() {
         alignItems: 'center',
         justifyContent: 'space-between',
       }}>
-        <div>
-          <div style={{ fontSize: 10, color: 'var(--accent)', letterSpacing: 4, textTransform: 'uppercase', marginBottom: 4 }}>
-            AMD × Lablab Hackathon 2026
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+          <div>
+            <div style={{ fontSize: 10, color: 'var(--accent)', letterSpacing: 4, textTransform: 'uppercase', marginBottom: 4 }}>
+              AMD × Lablab Hackathon 2026
+            </div>
+            <h1 style={{ fontSize: 22, fontWeight: 800, letterSpacing: -0.5, margin: 0 }}>
+              Credit<span style={{ color: 'var(--accent)' }}>Bridge</span>
+            </h1>
           </div>
-          <h1 style={{ fontSize: 22, fontWeight: 800, letterSpacing: -0.5 }}>
-            Credit<span style={{ color: 'var(--accent)' }}>Bridge</span>
-          </h1>
         </div>
         <div style={{
           fontSize: 10,

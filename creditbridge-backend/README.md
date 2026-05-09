@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="../assets/images/creditbridge-logo.png" alt="CreditBridge Logo" width="300">
+</p>
+
+<p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 

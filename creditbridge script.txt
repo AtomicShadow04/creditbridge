@@ -1,0 +1,63 @@
+CreditBridge Demo Script — Final Version (2.5 mins)
+
+[0:00–0:30] — Problem (voiceover or talk to camera)
+Show your CreditBridge logo or the UI landing page
+
+"There are over 40 million small businesses across Africa — market traders, food vendors, logistics operators, fashion designers. They generate real revenue, employ real people, and drive real economies. But when they walk into a bank and ask for a loan, they get turned away. Not because they're bad businesses — but because the credit system was never built for them. No payslips. No collateral. No credit bureau history. Africa's SME financing gap is $330 billion dollars. CreditBridge is our answer to that."
+
+[0:30–0:50] — Introduce the system (show the UI)
+Open browser showing CreditBridge frontend with the 4 agent cards visible
+
+"CreditBridge is a 4-agent autonomous AI system. It evaluates SME creditworthiness using alternative data — mobile money activity, cash flow patterns, transaction history, and sector signals — and makes a full credit decision with zero human intervention. Let me show you exactly how it works."
+
+
+[0:50–1:10] — Explain the agents (point to each agent card)
+Hover over each agent card as you mention it
+
+"There are four agents running in sequence. Agent 1 harvests 90 days of financial data and builds a structured business profile. Agent 2 uses Claude Opus 4.5 to score creditworthiness from zero to a hundred. Agent 3 runs compliance and AML checks with approval gates. And Agent 4 triggers an autonomous loan disbursement via the X402 payment protocol. One input. Four agents. One financial decision."
+
+
+[1:10–1:40] — Live demo (fill the form)
+Type into the form slowly so viewers can see
+
+"Let me run a live application. I'm submitting details for Lagos Fresh Farms — a small business requesting a ₦200,000 loan."
+
+Fill in:
+
+Business Name: Lagos Fresh Farms
+Phone: 08011223344
+BVN: 11223344556
+Business Reg: RC001122
+Loan Amount: 200000
+Wallet Address: your address
+
+
+"I hit Run — and watch all four agents fire automatically."
+
+Click the button — pause and let the agents light up one by one
+
+"Agent 1 harvesting 90 days of transaction data... Agent 2 scoring with Claude Opus 4.5... Agent 3 running AML and compliance checks... Agent 4 processing the disbursement decision... "
+
+
+[1:40–2:15] — Show and explain the result
+Point to the result card at the top
+
+"It takes about 11 to 13 seconds. The pipeline is complete. Lagos Fresh Farms scored 52 out of 100 — Medium risk tier. But look at the decision — REFER, not approved. And this is where CreditBridge gets interesting."
+
+Scroll to the AI Risk Narrative section
+
+"The AI didn't just apply a threshold. It read the actual business profile and caught something specific. Look at this — it flagged a sector mismatch. That's a data inconsistency that suggests either a documentation error or a misrepresentation — and the AI caught it without any hardcoded rule telling it to look for that."
+
+Point to the risks section
+
+"It also identified of about 5% profit margin as too thin to safely service additional debt, especially with existing loan obligations already in place. Strong repayment history and 63 months in business kept this from being an outright rejection — the AI weighed both sides and sent it for human review. That is exactly the kind of nuanced reasoning a senior credit officer would apply. CreditBridge does it in 16 seconds."
+
+Scroll to the audit trail
+
+"And every decision is fully documented. Compliance narrative, reason codes, timestamps, transaction hash — a complete audit trail that is regulatory-ready from day one."
+
+
+[2:15–2:30] — Close (talk to camera or voiceover)
+Show the full results screen
+
+"One API call. Four autonomous agents. A complete, explainable credit decision in under 16 seconds — for businesses that traditional banks have ignored for decades. This is CreditBridge. Built on NestJS, Anthropic Claude Opus 4.5, AMD Developer Cloud, and the X402 payment protocol. From street to bankable."
